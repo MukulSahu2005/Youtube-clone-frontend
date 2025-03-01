@@ -2,7 +2,6 @@
 
 .header{
     background-color: white;
-    
     display : flex ;
     flex-direction:  row ;
     justify-content: space-between ;    /*make space between the div*/
@@ -312,7 +311,6 @@ thus we have to fix the width of left and right !!*/
 
     padding: 2px 4px 2px 4px ;
     border-radius: 8px;
-
     position: absolute ;
     top:2px ; 
     right :3px ;
