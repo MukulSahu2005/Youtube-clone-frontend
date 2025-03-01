@@ -1,0 +1,114 @@
+
+
+
+.video-grid{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap:10px ;
+    row-gap : 10px ;
+    margin-top: 50px;
+}
+
+/*To Create a responsive layout over different screens ! 
+- import media query ! */
+@media(min-width:1285px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+}
+
+@media(max-width:1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media(max-width:650px){
+    .video-grid{
+        grid-template-columns: 1fr ;
+    }
+}
+
+.thumbnail{
+        width:100% ;
+        border-radius: 13px;
+}
+.thumbnail:hover{
+    border-radius:0;
+    opacity:0.9;
+}
+
+.video-info-grid{
+    display:grid ;
+    grid-template-columns : 50px 1fr ; 
+    margin-top: 12px;
+    /*1fr --means uss div me 50px pixels ke baad rest (250px space uss column me ,
+    will go to the , fr !! */
+
+}
+.channel-picture{
+            /*display:inline-block ;
+            width:50px;*/
+            vertical-align: top;
+}
+
+.profile-picture{
+    width:40px;
+    border-radius :25px ;
+/* vertical-align : top ; 
+-- no sense of doing it here , as the whole picture is a div 
+--if you put it in profile pic, no sense as img is the div only 
+-- thus we have to put div to the top !! */
+}
+
+.video-title{
+    margin-top:0px ;
+    margin-bottom: 10px;
+    font-family: roboto;
+    font-weight : 500 ; 
+    line-height: 18px;
+    font-size: 14px ;
+}
+
+.video-author{
+    margin-top:0px ;
+    margin-bottom:0px;
+    font-size:13px;
+}
+
+.video-title:hover ,
+.video-author:hover{
+    font-weight:700;
+    
+}
+
+.video-stats{
+    margin-top: 2px ;
+    font-size:13px;
+}
+
+.thumbnail-timer{
+    position: relative;
+}
+
+.thumbnail-time{
+    position: absolute ;
+    
+    bottom :3px;
+    right :3px ;
+    background-color: rgba(0,0,0,0.7);
+    color:white ;
+    border-radius:4px ;
+    font-family: roboto;
+    font-size :10px ;
+    font-weight:400px;
+
+    padding:3px ;
+    
+}
+
+.thumbnail ,
+.profile-picture ,
+.video-title,
+.video-author {
+    cursor: pointer ;
+}

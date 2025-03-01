@@ -1,0 +1,935 @@
+<html>
+    <head>
+        <title> Youtube Clone </title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet"  href= "youtubestyles/videos.css" >
+        <link rel="stylesheet"  href= "youtubestyles/header.css" >
+        <link rel="stylesheet" href="youtubestyles/sidebar.css" >
+        <link rel="stylesheet" href="youtubestyles/recommendation.css">
+        <link rel="stylesheet" href="youtubestyles/general.css">
+    
+    </head>
+
+    <body class="body">
+
+        <div class="upper">
+
+            <div class="header" >
+                <!--in real we have three sections in youtube , start middle end 
+                thus first create sections and then fill values !! -->   
+
+                <div class="left-section" >
+                    <img class =" hamburger-menu " src = "youtube_flexbox/hamburger-menu.svg" >    
+                    <img class ="youtube-logo" src="youtube_flexbox/youtube-logo (1).svg" >
+                </div >
+
+                <div class="middle-section" >
+                    <div class="combine">
+                        
+                        <div class ="search-box-div">
+                            <input class="search-box" type="text" placeholder="Search"  >
+                        </div>
+
+                        <div class="search-button-div">
+                            <button class="search-button"> 
+                                <img class ="search-icon" src="youtube_flexbox/search (1).svg">
+
+                                    <div style="position: absolute; z-index: 10000;">
+                                        <div class="tooltip">
+                                            Search
+                                        </div>  
+                                    </div>
+                                    
+                            </button>
+                        </div>
+                    </div>
+
+                    <button class="voice-button" >
+
+                        <img class="voice-button-icon" src ="youtube_flexbox/voice-search-icon.svg" >
+                        
+                        <div class="tooltip">
+                            Search with your voice 
+                        </div>
+
+                    </button>
+                </div>
+
+                <div class="right-section">
+
+                    <div>
+
+                        <button class="create-button" > 
+                            <!-- this is a flexbox !!-->
+                            <div>
+                                <swap style ="font-size :32 ;"> +   </swap> 
+                            </div>
+
+                            <div>
+                                <swap style= "vertical-align:center ; 
+                                font-family: roboto ;
+                                margin-left:4px;
+                                font-size:15px;
+                                font-weight: 500;"> 
+                                Create </swap>
+                            </div>
+
+                        </button>
+
+                    </div>
+
+                    <div class="bell-icon-div" >
+
+                        <button class="bell-icon-button">
+
+                            <img class="bell-icon" src="youtube_flexbox/notifications.svg" >
+                            
+                            <div class="notification">
+                                4+
+                            </div>
+                            
+                            <div class="tooltip">
+                                Notifications
+                            </div>
+                        </button>
+
+                    </div>
+                    
+                    <div>
+                        <button class= "profile-pic-button" >
+                            <img class="profile-pic" src="youtube_flexbox/channels4_profile.jpg" >
+                        </button>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="recommendation">
+                
+                <div>
+                    <button class="tilebox">
+                        All
+                    </button>
+                </div>
+                
+                <div>
+                    <button class="tilebox2">
+                        Music
+                    </button>
+                </div>
+
+                <div>
+                    <button class="tilebox2">
+                        Lo-fi
+                    </button>
+            
+                </div>
+            
+                <div>
+                    <button class="tilebox2">
+                        Playlists
+                    </button>
+                </div>
+                
+                <div>
+                    <button class="tilebox2">
+                        Jukebox
+                    </button>
+                </div>
+
+                <div>
+                    <button class="tilebox2">
+                        Web devlopment 
+                    </button>
+                </div>
+
+                <div>
+                    <button class="tilebox2">
+                        Instrumental 
+                    </button>
+                </div>
+                <div>
+                    <button class="tilebox2">
+                        Gadegets
+                    </button>
+                </div>
+
+                <div>
+                    <button class="tilebox2">
+                        Atif Aslam 
+                    </button>
+                </div>
+
+                <div>
+                    <button class="tilebox2">
+                        Live
+                    </button>
+                </div>
+                
+                <div>
+                    <button class="tilebox2">
+                        Meditation music
+                    </button>
+                </div>
+
+                <div>
+                    <button class="tilebox2">
+                        Acoustic Guitar
+                    </button>
+                </div>
+
+                <div>
+                    <button class="tilebox2">
+                        News
+                    </button>
+                </div>
+
+                <div>
+                    <button class="tilebox2">
+                        New to you
+                    </button>
+                </div>
+                
+
+                <div>
+                    <button class="tilebox2">
+                        Watched
+                    </button>
+                </div>
+                
+
+                <div>
+                    <button class="tilebox2">
+                        >
+                    </button>
+                </div>            
+
+
+            </div>
+
+        </div>
+
+        <div class="sidebar">
+
+            <button class="sidebar-button">
+                <img class="home" src="youtube-grid/home.svg" >  <br>
+                Home
+
+                <div class="tooltip" >
+                    Home 
+                </div>
+            </button>
+
+            <button class ="sidebar-button">
+                <img class="shorts" src="youtube-grid/shorts.svg">  <br>
+                Shorts
+
+                <div class="tooltip" >
+                    Shorts
+                </div>
+
+            </button>
+
+            <button class="sidebar-button">
+                <img class="subscriptions" src="youtube-grid/subscriptions.svg" >  <br>
+                Subscriptions 
+
+                <div class="tooltip" >
+                    Subscriptions 
+                </div>
+            </button>
+
+            <button class="sidebar-button">
+                <img class="you" src="youtube-grid/pp,1.png" >  <br>
+                You 
+
+                <div class="tooltip" >
+                    You 
+                </div>
+            </button>
+
+        </div>
+    
+        <div class="video-grid">
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail1.avif" >
+                    
+                    <div class="thumbnail-time">
+                        1:20:30
+                    </div>  
+                </div>
+
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp1.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            This Sad Music Playlist Will Make You Cry At 3 AM 💔 Playlist Sad
+                        </p>
+                        
+                        <p class="video-author">
+                            broken soul.
+                        </p>
+
+                        <p class="video-stats">
+                            942 views &#183 5 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview" >
+                
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail2.avif" >
+                    
+                    <div class="thumbnail-time">
+                        4:57
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+
+                    <div class="channel-picture"> 
+                        <img class="profile-picture" src="Profile pics/pp2.jpg">
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title"> 
+                            give me 5 minutes. I'll save 5 years of your life.
+                        </p>     
+
+                        <p class="video-author">
+                            Tharun Speaks
+                        </p>     
+
+                        <p class="video-stats">
+                            242K views  &#183 6 days ago
+                        </p>  
+                    </div>   
+                </div>
+            </div>
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail3.avif" >
+                    
+                    <div class="thumbnail-time">
+                        11:51
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp3.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            A.R. Rahman - Kun Faya Kun (14 of 16)
+                        </p>
+                        
+                        <p class="video-author">
+                            Berklee College of Music
+                        </p>
+
+                        <p class="video-stats">
+                            25M views &#183 8 years ago 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="video-preview" >
+            
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail4.avif" >
+                    
+                    <div class="thumbnail-time">
+                        1:07:37
+                    </div>  
+                </div>
+                <div class="video-info-grid">
+
+                    <div class="channel-picture"> 
+                        <img class="profile-picture" src="Profile pics/pp4.jpg">
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title"> 
+                            Complete C++ STL in 1 Video | Time Complexity and Notes
+                        </p>     
+
+                        <p class="video-author">
+                            take U forward
+                        </p>     
+
+                        <p class="video-stats">
+                            1.3M views  &#183 2 years ago
+                        </p>  
+                    </div>   
+                </div>
+            </div>
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail5.avif" >
+                    
+                    <div class="thumbnail-time">
+                        8:06
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp5.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            How I Tricked My Brain to Be Addicted to Coding (The Dopamine Hack)
+
+                        </p>
+                        
+                        <p class="video-author">
+                            Ashish Pratap Singh
+                        </p>
+
+                        <p class="video-stats">
+                            289K views &#183 2 months ago 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail6.avif" >
+                    
+                    <div class="thumbnail-time">
+                        4:08
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp6.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            Sajna - Darshan Raval, Dharal Surelia (Official Video)
+                        </p>
+                        
+                        <p class="video-author">
+                            DarshanRavalDZ
+                        </p>
+
+                        <p class="video-stats">
+                            1.3M views &#183 2 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="video-preview" >
+                            
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail7.avif" >
+                    
+                    <div class="thumbnail-time">
+                        25:25
+                    </div>  
+                </div>
+                <div class="video-info-grid">
+
+                    <div class="channel-picture"> 
+                        <img class="profile-picture" src="Profile pics/pp7.jpg">
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title"> 
+                            Stop Wasting Your Life - 7 Things I Quit to Go From Broke to Millionaire
+                        </p>     
+
+                        <p class="video-author">
+                            Dan Martell
+                        </p>     
+
+                        <p class="video-stats">
+                            1.5M views  &#183 2 months ago
+                        </p>  
+                    </div>   
+                </div>
+            </div>
+
+            <div class="video-preview" >
+                    
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail8.avif" >
+                    
+                    <div class="thumbnail-time">
+                        1:00
+                    </div>  
+                </div>
+                <div class="video-info-grid">
+
+                    <div class="channel-picture"> 
+                        <img class="profile-picture" src="Profile pics/pp8.jpg">
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title"> 
+                            these 59 seconds will change your life
+                        </p>     
+
+                        <p class="video-author">
+                            Mark Darwin 
+                        </p>     
+
+                        <p class="video-stats">
+                            472K views  &#183 2 weeks ago
+                        </p>  
+                    </div>   
+                </div>
+            </div>
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail9.avif" >
+                    
+                    <div class="thumbnail-time">
+                        13:09
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp9.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            OPEN YOUR EYES AND SEE THE REALITY *IMPORTANT*
+                        </p>
+                        
+                        <p class="video-author">
+                            Neeraj Walia
+                        </p>
+
+                        <p class="video-stats">
+                            1.2M views &#183 10 months ago
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail10.avif" >
+                    
+                    <div class="thumbnail-time">
+                        8:01
+                    </div>  
+
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp10.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            Regret Waale Rishte - Pallavi Gurbani | Hindi | Tape A Tale
+                        </p>
+                        
+                        <p class="video-author">
+                            Tape A Tale
+                        </p>
+
+                        <p class="video-stats">
+                            516K views  &#183 7 months ago
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail11.avif" >
+                    
+                    <div class="thumbnail-time">
+                        5:04
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp11.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            Tu Chahiye - [Slowed+Reverb] Atif Aslam | Bajrangi Bhaijaan | Salman Khan | @Text4Music Lofi Vibe
+                        </p>
+                        
+                        <p class="video-author">
+                            Text4Music
+                        </p>
+
+                        <p class="video-stats">
+                            3.3M views  &#183 3 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail12.avif" >
+                    
+                    <div class="thumbnail-time">
+                        4:20
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp12.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            The Worst Test - I'm an engineering failure - flash mob
+                        </p>
+                        
+                        <p class="video-author">
+                            grdreamers
+                        </p>
+
+                        <p class="video-stats">
+                            5M views &#183 12 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail13.avif" >
+                    
+                    <div class="thumbnail-time">
+                        3:25
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp13.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            If you're ambitious but lazy, please watch this video...
+                        </p>
+                        
+                        <p class="video-author">
+                            Rise With Odn
+                        </p>
+
+                        <p class="video-stats">
+                            400K views &#183 2 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail14.avif" >
+                    
+                    <div class="thumbnail-time">
+                        13:09
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp14.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            the power of CHOICE (a short film to motivate you)
+                        </p>
+                        
+                        <p class="video-author">
+                            Anna Engelschall
+                        </p>
+
+                        <p class="video-stats">
+                            1.5M views &#183 2 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail15.avif" >
+                    
+                    <div class="thumbnail-time">
+                        2:24
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp15.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            how to live your BEST LIFE in 2 minutes (or less)
+                        </p>
+                        
+                        <p class="video-author">
+                            theApolloAlien
+                        </p>
+
+                        <p class="video-stats">
+                            141K views &#183 2 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail16.avif" >
+                    
+                    <div class="thumbnail-time">
+                        7:01
+                    </div>  
+
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp16.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            Chaudhary - Amit Trivedi feat Mame Khan, Coke Studio @ MTV Season 2
+
+                        </p>
+                        
+                        <p class="video-author">
+                            Coke Studio India 
+                        </p>
+
+                        <p class="video-stats">
+                            97M views &#183 12 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail17.avif" >
+                    
+                    <div class="thumbnail-time">
+                        19:19
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp17.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            Sleep Is Your Superpower | Matt Walker | TED
+                        </p>
+                        
+                        <p class="video-author">
+                            TED
+                        </p>
+
+                        <p class="video-stats">
+                            14M views &#183 5 years ago
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="video-preview" >
+
+                <div class="thumbnail-timer">
+                    <img class="thumbnail" 
+                        src="thumbnails/thumbnail18.avif" >
+                    
+                    <div class="thumbnail-time">
+                        2:14
+                    </div>  
+                </div>
+
+                <div class="video-info-grid">
+                    
+                    <div class="channel-picture">
+                        
+                        <img class="profile-picture" 
+                            src="Profile pics/pp18.jpg">
+
+                    </div>
+
+                    <div class="video-info">
+                        
+                        <p class="video-title">
+                            Abdul Hannan & Rovalio - Iraaday (Official Music Video)
+                        </p>
+                        
+                        <p class="video-author">
+                            Abdul Hannan
+                        </p>
+
+                        <p class="video-stats">
+                            87M views &#183 2 years ago
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+                
+    </body>
+
+</html>

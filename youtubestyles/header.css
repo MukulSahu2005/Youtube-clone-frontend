@@ -1,0 +1,352 @@
+
+
+.header{
+    background-color: white;
+    
+    display : flex ;
+    flex-direction:  row ;
+    justify-content: space-between ;    /*make space between the div*/
+    
+    margin-bottom:  0px ;   
+  
+    position : fixed ;      /*converting it into a fixed and non floating header file*/
+    
+    inset : 0px; /*( instead of Top=right =bottom=left=0)*/
+    
+    height:55px;  /*thus changes the size of the fixed part -- more height , more bigger header !! */
+ 
+    border-bottom: 1px solid rgb(192,192,192) ;     /*border at the bottom only  */
+
+    z-index: 6;
+}
+
+/*we see that --
+in real youtube left and right section are fixed but the middle is changing ;
+thus we have to fix the width of left and right !!*/
+
+
+.left-section{
+    width:200px ;
+    
+    display : flex; 
+    align-items :center ;
+}
+
+.hamburger-menu{ 
+    height : 24px ;
+    margin-left: 15px ; 
+    margin-right : 20px ;
+}
+
+.youtube-logo{ 
+    height : 20px ;
+}
+
+.middle-section{
+    flex:1 ;
+    max-width :600px ;          /*fix th ax width of the box !! -- after which it will not expand !! */
+    
+    margin-left : 20px ;
+    margin-right : 20px ; 
+
+    /*Nested Flex !!*/
+    display: flex ;
+    flex-direction: row;
+    align-items : center ;
+}
+
+.combine{
+    flex:1 ;
+
+    display: flex ;
+    flex-direction: row ;
+
+    border :none ;
+    border-radius:20px ;
+
+    margin-right:10px;
+}
+
+
+.search-box{
+    margin-right: 0px ;         /*we had given flex:1 in the search box divv -- means -- space left after the search button will be given to the search input!!*/
+    width:100%;     /*now here we gave width --100% to box ,, means -- it takes all the space in input box , thus changes size of the input box !! */
+    height: 40px ; 
+
+    font-size : 16px ;  /*to change the size of what you type in the box !! */
+
+    border-style: solid;
+    border-width : 1px ;      
+    border-color: rgb(192,192,192) ;
+
+    box-shadow : inset 1px 2px 5px rgba(0,0,0,0.05);   /*done prev lessons -- inset --  sets the box shadow inside !! */
+
+    /*to change the  radius of different vertex */
+    border-top-left-radius : 20px;
+    border-bottom-left-radius : 20px ;
+
+    padding-left: 14px;
+} 
+
+.search-box::placeholder{
+    font-family : roboto ;       /*change the font of what is seen */
+    font-size : 16px ;            /*to change the size of what is seen at placeholder !*/
+
+    padding-left : 15px ;
+
+    vertical-align : center ;
+
+    border-color: blue ;
+}
+
+.search-box-div{
+    flex:1 ;
+}
+
+.search-button{
+    /*for button */    
+    margin-left: 0px ;
+    width :60px ;
+    height: 40px ;
+    
+    border: 1px solid rgb(192,192,192) ;        
+    /*BORDER --First do the things seperately to match , 
+    --then merge in end to make the code shorter !!*/
+    
+    background-color : rgb(245, 245, 245) ;
+
+    /*to remove the double border ,
+     we have to push button to the left !!*/
+    margin-left : -1px ;
+    
+    /*to change the  radius of different vertex */
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius : 20px;
+}
+
+
+.search-button , 
+.sidebar-button{
+    position: relative;
+}
+
+.search-button .tooltip{
+    /*
+    -- Created a sub class , in parent class
+    -- tooltip when we do not hover over the search button 
+    */
+    background-color: white ; 
+
+   /*  SHORTCUTS*-- used above !
+    -- works in form of -- top , right , bottom , left 
+    -- start from top and go clockwise !  */
+    padding: 4px 6px 4px 6px ;
+
+   font-size: 13px;
+   font-family: roboto;
+    color :rgb(70,70,70);
+   bottom:-24px ;
+
+    /*border: solid ;
+   border-color: black;
+   border-width: 1px ;
+*/
+  /*-- USING SHORTCUT !!
+  -- border : width type color ;  */ 
+   border : 1px solid rgb(150,150,150);
+
+   opacity :0  ;
+   transition : 0.75s ;
+   /*since in HTML code , tooltip is placed inside the button , thus when we hover on tooltip area , it shows the toolpic !!
+   can be sort by removing the hover from the tooltip !! */
+   
+   pointer-events : none ;       /* remove the hover over tooltip*/
+}
+
+.search-button:hover .tooltip {
+    /*
+    - we will target tooltip only when we hover search button !
+    - tooltip when we hover over th button !
+    - on hover , things do not change unttil we change/modify them ! */
+    opacity:1 ;
+}
+
+
+.search-icon{
+    /*for photo */
+    margin-top: 2px ;
+    width: 30px ;
+}
+
+.voice-button{
+    /*for voice button*/
+    width : 40px ; 
+    height: 40px ; 
+
+    border-radius : 20px ;
+    border: none ;
+
+    background-color : rgb(245, 245, 245) ;
+
+    position: relative;
+
+}
+
+.voice-button-icon{
+    /*for photo inside voice button !!*/ 
+}
+
+/*applying same code to different classes --
+- use the classes name with commma in declaration ,
+- then write the code , applied to both 
+- if the class have more codes , then also it works , 
+- boht personal and common codes are apllied to it !!*/
+
+.voice-button , 
+.bell-icon-button
+{
+    position: relative;
+
+    /*Explaination is in below class !*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bell-icon-button:hover{
+    background-color:rgb(220,220,220); ;
+    width: 30 ;
+}
+
+.voice-button .tooltip ,
+.bell-icon-button .tooltip {
+    position : absolute ;
+
+    bottom :-35px;
+    
+    background-color: gray ;
+    color:white ;
+    font-family: roboto ;
+    font-size: 13px ;
+
+    border : none ;
+    border-radius: 3px;
+    
+    /*the text will wrap around , and not in 1 line -- use to make it in 1 line */
+    white-space: nowrap ;
+
+    /*For keepimg the tooltip in centre -- vertically / horizontallly we need to use flexbox 
+    - can center it ! 
+    - thus make , button as flexbox 
+    - then add items as flexbox 
+    - justify content as centre !!
+    -thus made it flex and aligned them to center ! */
+    
+    padding:4px ;       /*means from all sides */
+
+    opacity : 0;
+    transition: 0.20s ;
+
+    pointer-events : none ; 
+}
+
+.voice-button:hover .tooltip ,
+.bell-icon-button:hover .tooltip {
+    opacity : 0.95;
+}
+
+.right-section{
+    width:200px;
+
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+}
+
+.create-button{
+    display: flex;
+    flex-direction: row ;
+    align-items: center ;
+    column-gap: 4px;
+
+    height : 40px ;
+    width :90px ;
+
+    border: none ;
+    border-radius: 20px ;
+}
+
+.create-button:hover ,
+.voice-button:hover ,
+.search-button:hover,
+.bell-icon-button:hover{
+    background-color: rgb(220,220,220);
+}
+
+
+.bell-icon{
+    height:25px;
+}
+
+.bell-icon-button{
+    height: 40px ;
+    width:40px ;
+    
+    border:none ;
+    background-color: white ;
+    border-radius : 20px ;
+    
+    margin-left:10px;
+
+    position :relative ;
+}
+
+
+.notification{
+    background-color: red;
+    color : white ;
+    
+    font-family : roboto;
+    font-weight: 400;
+    font-size:10px ;
+
+    padding: 2px 4px 2px 4px ;
+    border-radius: 8px;
+
+    position: absolute ;
+    top:2px ; 
+    right :3px ;
+
+}
+
+
+.profile-pic-button{
+    height:40px ;
+    width:50px ;
+
+    border:none ;
+    
+    background-color: white;
+    margin-left:10px;
+}
+
+
+.profile-pic{
+    height:40px ;
+    border-radius:20px ;
+}
+
+/*
+-Creating Responsive Design -
+-making website look best in different layouts !!*/
+
+
+.hamburger-menu ,
+.youtube-logo ,
+.search-button ,
+.voice-button ,
+.profile-pic-button ,
+.bell-icon-button ,
+.create-button{
+    cursor: pointer ;
+}

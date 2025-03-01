@@ -1,0 +1,111 @@
+
+.sidebar{
+    background-color: rgb(253,253,253);
+    color : gray ;
+
+    position: fixed ;
+    
+    top :60px ;
+    bottom :0px ;
+    left :0px ;
+    width :70px ;
+    
+    padding-left :10px ;
+
+    font-family: roboto ;
+    font-size: 1px ;
+
+    z-index:100;
+}
+
+
+.sidebar-button:hover{
+    background-color: rgb(235,235,235);
+    cursor: pointer;
+}
+
+.sidebar-button{
+    width:60px ;
+    height: 70px ;
+    font-family: roboto;
+    font-size : 10px ;
+    padding-left:0px ;
+    border:none ;
+    background-color: white ;
+}
+
+
+.wrapper{
+    position: absolute;
+}
+
+.sidebar-button .tooltip{
+    /*tooltip when we do not hover over the search button*/
+   position : absolute;
+    z-index:100 ;
+    /*right:-60px ; check it is giving error !*/
+   background-color: white ; 
+
+   /*
+   padding-top:4px ;
+   padding-bottom: 4px ;
+   padding-right : 6px ;
+   padding-left : 6px ;
+*/
+   padding : 4px 6px 4px 6px ;
+
+   font-size: 11px;
+   font-family: roboto;
+   bottom:-24px ;
+
+   /*border: solid ;
+   border-color: black;
+   border-width: 1px ;*/
+
+   border : 1px solid rgb(150,150,150);
+    font:rgb(70,70,70);
+
+
+   opacity :0  ;
+   transition : 0.75s ;
+   /*since in HTML code , tooltip is placed inside the button , thus when we hover on tooltip area , it shows the toolpic !!
+   can be sort by removing the hover from the tooltip !! */
+
+   pointer-events : none ;       /* remove the hover over tooltip*/
+}
+
+.sidebar-button:hover .tooltip{
+    /*we will target tooltip only when we hover search button !*/
+    /*tooltip when we hover over th button !*/
+    /*NOTE-- on h
+    over , things do not change unttil we change/modify them ! */
+    opacity:1 ;
+    z-index: 100;
+}
+
+
+.home {
+    padding-top:5px ;
+    height : 26px ;
+    margin-bottom:10px;
+}
+
+.shorts {
+    padding-top:5px ;
+    height:22px ;
+    margin-bottom:6px;
+   
+}
+
+.subscriptions{
+    padding-top:5px ;
+    height:22px ;
+    margin-bottom:6px;
+
+}
+
+.you{
+    padding-top:5px ;
+    height:22px ;
+    margin-bottom:6px;
+}
